@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+#myfnav {
+  position: sticky;
+  height: 100px;
+  width: 100vw;
+  background: white;
+  opacity: 0.95;
+  top: 0;
+  z-index: 546814;
+  .logo {
+    position: absolute;
+    font-size: 2.7rem;
+    left: 50px;
+    top: 0em;
+    line-height: 100px;
+    font-family: "Krona One", sans-serif;
+    color: #3498db;
+    pointer-events: none;
+  }
+  .nav {
+    position: absolute;
+    right: 40px;
+    line-height: 100px;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      li {
+        padding: 0 17px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        a {
+          position: relative;
+          font-family: "Quicksand", sans-serif;
+          color: grey;
+          transition: 0.4s;
+          padding: 7px 0;
+          &:hover {
+            color: black;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: black;
+            bottom: 0;
+            transition: 0.4s;
+          }
+          &:hover::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
