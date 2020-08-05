@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   width: 100vw;
@@ -36,7 +40,6 @@ body {
       li {
         padding: 0 17px;
         font-size: 1.3rem;
-        font-weight: 500;
         a {
           position: relative;
           font-family: "Quicksand", sans-serif;
@@ -44,7 +47,7 @@ body {
           transition: 0.4s;
           padding: 7px 0;
           &:hover {
-            color: black;
+            color: #444444;
           }
           &::after {
             content: "";
@@ -52,7 +55,7 @@ body {
             left: 50%;
             width: 0;
             height: 2px;
-            background: black;
+            background: #444444;
             bottom: 0;
             transition: 0.4s;
           }
@@ -62,6 +65,49 @@ body {
           }
         }
       }
+    }
+  }
+}
+.section-heading {
+  font-size: 2.8rem;
+  font-family: "Righteous", cursive;
+}
+#team {
+  margin-top: 50px;
+  .cards {
+    margin-top: 100px;
+    .card {
+      width: 300px;
+      height: 400px;
+      overflow: hidden;
+      transition: 0.4s;
+      &:hover {
+        height: 700px;
+        margin-top: -50px;
+      }
+      .card-title {
+        width: 100%;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+#contact {
+  margin-top: 50px;
+  #per-profile {
+    h4 {
+      font-family: "Red Rose", cursive;
+    }
+    #call,
+    #mail {
+      padding: 7px;
+      background: black;
+      color: white;
+      border-radius: 50%;
+      margin-left: 5px;
+    }
+    #mail {
+      padding: 8px;
     }
   }
 }

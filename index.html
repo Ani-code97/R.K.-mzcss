@@ -23,7 +23,11 @@
     />
     <!-- Google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Quicksand:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap"
       rel="stylesheet"
     />
     <!-- Custom CSS -->
@@ -32,20 +36,32 @@
   <body>
     <section id="myfnav">
       <div class="logo">R.K. INTERNATIONAL</div>
+      <ul id="drop-menu" class="dropdown-content">
+        <li><a href="#">Syllabys</a></li>
+        <li><a href="#">Holiday Homework</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Solution set</a></li>
+      </ul>
       <div class="nav">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Downloads & other</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li>
+            <a href="#" class="dropdown-trigger" data-target="drop-menu"
+              >Downloads & other<i class="material-icons right-align"
+                >arrow_drop_down</i
+              ></a
+            >
+          </li>
+          <li><a href="#contact">Contact us</a></li>
         </ul>
       </div>
     </section>
     <div id="myfcar">
       <div
         class="carousel carousel-slider"
-        style="width: 100vw; overflow: hidden;"
+        style="width: 100vw; overflow: hidden; height: 557px;"
       >
         <a class="carousel-item"><img src="images/Welcome.png" alt="" /> </a>
         <a class="carousel-item"><img src="images/eduation.png" alt="" /></a>
@@ -54,6 +70,199 @@
     </div>
     <div id="about">
       <h2 class="section-heading center-align">About us</h2>
+      <p class="container center-align">
+        <span
+          >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+          quae porro alias provident ab officiis corporis, dicta incidunt ipsa,
+          minus quasi temporibus, nostrum iste tempora. Porro natus minus est
+          voluptate.</span
+        >
+        <span
+          >Deserunt reiciendis nulla explicabo eius veritatis repellendus porro
+          voluptatum, modi cumque sed est vel. Dolor quaerat, quisquam dicta
+          asperiores praesentium omnis officia, temporibus in ab tempora cumque
+          dolorum amet provident?</span
+        >
+        <span
+          >Soluta, nostrum libero esse reiciendis amet voluptatem asperiores ad
+          recusandae mollitia magni laborum deleniti quasi blanditiis quos
+          tenetur. Laboriosam, accusamus! Quisquam neque vero eum cum ipsa
+          adipisci earum iste labore?</span
+        >
+        <span
+          >Harum id minima repellendus quos laudantium ipsa quam eius eveniet in
+          voluptate voluptatibus nam, animi ex magni, totam veritatis quae sequi
+          pariatur temporibus consequatur incidunt commodi possimus? Labore,
+          eveniet eaque?</span
+        >
+        <span
+          >Eius cumque eligendi autem assumenda nisi quae ab, molestias tempore
+          repellat, alias dolor, et eveniet! Quos accusantium voluptatum ea
+          beatae tempore nesciunt, repellat quas eligendi! Blanditiis fugit nemo
+          commodi voluptatum?</span
+        >
+        <span
+          >Aspernatur distinctio vel esse aut harum corrupti veniam eligendi
+          fuga iusto. At perferendis expedita temporibus nesciunt aperiam sit
+          quo voluptas delectus saepe laudantium, porro omnis corrupti
+          voluptatem explicabo sunt voluptatibus.</span
+        >
+        <span
+          >Voluptates, voluptatem! Magni impedit laborum velit id saepe eos at
+          maxime, ducimus natus pariatur voluptatibus vero molestiae cupiditate
+          assumenda doloremque, eligendi aspernatur maiores quas similique
+          asperiores non. Omnis, assumenda ipsum!</span
+        >
+        <span
+          >Vero voluptates tempora veniam natus ut accusantium exercitationem
+          architecto ad assumenda? Ducimus, voluptates aut non qui itaque
+          officia voluptatem deserunt incidunt nulla atque laboriosam animi,
+          mollitia sed, iusto harum labore.</span
+        >
+        <span
+          >Voluptate quae animi aliquid in ullam harum sed, vero totam, velit
+          dolores fugit perspiciatis nemo sint unde, repudiandae earum
+          reprehenderit est! Nemo est illum sunt earum quidem corrupti, facilis
+          consequatur?</span
+        >
+        <br /><br />
+        <a href="#" class="btn-small waves-effect blue waves-light"
+          >Read more</a
+        >
+      </p>
+    </div>
+    <div id="team">
+      <h2 class="section-heading center-align">Our Team</h2>
+      <div class="row container">
+        <div class="cards">
+          <div class="col xl4 lg4 m4 s12 xs12">
+            <div class="card hoverable" style="width: 300px;">
+              <div class="card-image">
+                <img src="images/director.jpg" style="height: 400px;" />
+                <span class="card-title grey darken-3"
+                  >From Director's Desk</span
+                >
+              </div>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores corrupti, aperiam tempore enim labore, quam expedita
+                  voluptates porro temporibus sunt architecto consequuntur
+                  doloremque eos eveniet accusantium modi minus quo? Laborum.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="btn-small waves-effect teal waves-light"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col xl4 lg4 m4 s12 xs12">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="images/director.jpg" style="height: 400px;" alt="" />
+                <div class="card-title grey darken-3">
+                  From Principal's Desk
+                </div>
+              </div>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Rerum aperiam, facilis quaerat quibusdam dolores officia
+                  tenetur error laudantium consectetur rem porro tempora non
+                  quis corporis adipisci exercitationem numquam, maiores
+                  delectus.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="btn waves-effect waves-light teal"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col xl4 lg4 m4 s12 xs12">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="images/director.jpg" style="height: 400px;" alt="" />
+                <div class="card-title grey darken-3">Teachers' team</div>
+              </div>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Rerum aperiam, facilis quaerat quibusdam dolores officia
+                  tenetur error laudantium consectetur rem porro tempora non
+                  quis corporis adipisci exercitationem numquam, maiores
+                  delectus.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="btn waves-effect waves-light teal"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <h2 class="section-heading center-align">Feel free to contact us</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col xl6 lg6 m6 s12 xs12">
+            <div class="left-align z-depth-4" id="per-profile">
+              <h4 class="center-align">Don't be a Stranger</h4>
+              <i class="material-icons medium">explore</i
+              ><span id="profile-text">Kankarbagh, Patna, Bihar, India</span>
+              <br /><br />
+              <i class="material-icons small" id="call">call</i>
+              <span id="profile-text">9204613799, 9973860205</span>
+              <br /><br />
+              <i class="material-icons small" id="mail">email</i>
+              <span id="profile-text"
+                >Rajeshwar9204@gmail.com , Royu9286@gmail.com</span
+              >
+            </div>
+          </div>
+          <div class="col xl6 lg6 m6 s12 xs12">
+            <form action="#" method="POST">
+              <form action="">
+                <div class="input-field col s12">
+                  <input type="text" id="name" class="validate" />
+                  <label for="name">Enter your name here:</label>
+                </div>
+                <div class="input-field col s12">
+                  <input type="email" id="email" class="validate" />
+                  <label for="email" data-error="wrong" data-success="right"
+                    >Email:</label
+                  >
+                </div>
+                <div class="input-field col s12">
+                  <input type="password" id="password" class="validate" />
+                  <label for="password" data-error="wrong" data-success="right"
+                    >Password:</label
+                  >
+                </div>
+                <div class="input-field col s12">
+                  <textarea
+                    id="textarea1"
+                    class="materialize-textarea"
+                  ></textarea>
+                  <label for="textarea1">Enter your Message here: </label>
+                </div>
+                <div class="input-field center-align col s6">
+                  <input type="submit" class="btn green" value="Submit" />
+                </div>
+                <div class="input-field col s6">
+                  <input type="reset" class="btn red" value="Reset" />
+                </div>
+              </form>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <!-- jquery -->

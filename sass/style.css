@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -53,7 +58,6 @@ body {
 #myfnav .nav ul li {
   padding: 0 17px;
   font-size: 1.3rem;
-  font-weight: 500;
 }
 
 #myfnav .nav ul li a {
@@ -66,7 +70,7 @@ body {
 }
 
 #myfnav .nav ul li a:hover {
-  color: black;
+  color: #444444;
 }
 
 #myfnav .nav ul li a::after {
@@ -75,7 +79,7 @@ body {
   left: 50%;
   width: 0;
   height: 2px;
-  background: black;
+  background: #444444;
   bottom: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -84,5 +88,57 @@ body {
 #myfnav .nav ul li a:hover::after {
   width: 100%;
   left: 0;
+}
+
+.section-heading {
+  font-size: 2.8rem;
+  font-family: "Righteous", cursive;
+}
+
+#team {
+  margin-top: 50px;
+}
+
+#team .cards {
+  margin-top: 100px;
+}
+
+#team .cards .card {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#team .cards .card:hover {
+  height: 700px;
+  margin-top: -50px;
+}
+
+#team .cards .card .card-title {
+  width: 100%;
+  opacity: 0.8;
+}
+
+#contact {
+  margin-top: 50px;
+}
+
+#contact #per-profile h4 {
+  font-family: "Red Rose", cursive;
+}
+
+#contact #per-profile #call,
+#contact #per-profile #mail {
+  padding: 7px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+#contact #per-profile #mail {
+  padding: 8px;
 }
 /*# sourceMappingURL=style.css.map */
